@@ -22,5 +22,9 @@ from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('a1/', views.view1),
+    path('login/', views.login_user),
+    path('logout/', views.logout_view),
+    path('create/', views.create_user),
+    path('check/', views.check_status),
     path('a2/', csrf_exempt(views.SampleClassView.as_view()))
 ]
